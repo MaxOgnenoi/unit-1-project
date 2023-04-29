@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+  }
+  
+  .question {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+  
+  button {
+    margin: 10px;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border: solid black;
+    border-radius: 50%;
+    transition: 0.2s;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  
+  #spok:hover::after {
+    content: "Spok";
+    opacity: 1;
+    font-size: 30px;
+    text-shadow: 1px 1px;
+  }
+  
+  #rock:hover::after {
+    content: "Rock";
+    opacity: 1;
+    font-size: 30px;
+    text-shadow: 1px 1px;
+  }
+  
+  #scissors:hover::after {
+    content: "Scissors";
+    opacity: 1;
+    font-size: 30px;
+    text-shadow: 1px 1px;
+  }
+  
+  #paper:hover::after {
+    content: "Paper";
+    opacity: 1;
+    font-size: 30px;
+    text-shadow: 1px 1px;
+  }
+  
+  #lizard:hover::after {
+    content: "Lizard";
+    opacity: 1;
+    font-size: 30px;
+    text-shadow: 1px 1px;
+  }
+  
+  #spok {
+    background-image: url('images/spok.png');
+  }
+  
+  #scissors {
+    background-image: url('images/scissors.png');
+  }
+  
+  #rock {
+    background-image: url('images/rock.png');
+  }
+  
+  #paper {
+    background-image: url('images/paper.png');
+  }
+  
+  #lizard {
+    background-image: url('images/lizard.png');
+  }
+  
+  .question {
+    background-image: url('images/question.png');
+  }
+  
+  
+  .centerButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border: 2px solid white;
+    border-radius: 50%
+  }
