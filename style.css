@@ -1,118 +1,145 @@
 body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-  }
-  
-  .left {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    justify-content: center;
-    
-  }
-  
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-  .center {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  .right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-  
-  }
-  
-  #enemyCircle, #myCircle {
-    width: 200px;
-    height: 200px;
-    background-color: grey;
-   border: 2px solid white;
-    border-radius: 50%;
-    margin: 150px;
-  }
-  button {
-    margin: 10px;
-    background-size: cover;
-    width: 150px;
-    height: 150px;
-    border: solid black;
-    border-radius: 50%;
-    transition: 0.2s;
-  }
-  
-  button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-  
-  #spok:hover::after {
-    content: "Spok";
-    opacity: 1;
-    font-size: 30px;
-    text-shadow: 1px 1px;
-  }
-  
-  #rock:hover::after {
-    content: "Rock";
-    opacity: 1;
-    font-size: 30px;
-    text-shadow: 1px 1px;
-  }
-  
-  #scissors:hover::after {
-    content: "Scissors";
-    opacity: 1;
-    font-size: 30px;
-    text-shadow: 1px 1px;
-  }
-  
-  #paper:hover::after {
-    content: "Paper";
-    opacity: 1;
-    font-size: 30px;
-    text-shadow: 1px 1px;
-  }
-  
-  #lizard:hover::after {
-    content: "Lizard";
-    opacity: 1;
-    font-size: 30px;
-    text-shadow: 1px 1px;
-  }
-  
-  #spok {
-    background-image: url('images/spok.png');
-  }
-  
-  #scissors {
-    background-image: url('images/scissors.png');
-  }
-  
-  #rock {
-    background-image: url('images/rock.png');
-  }
-  
-  #paper {
-    background-image: url('images/paper.png');
-  }
-  
-  #lizard {
-    background-image: url('images/lizard.png');
-  }
-  
-  .question {
-    background-image: url('images/question.png');
-  }
-  
-  
-  
+}
+
+#scoreTitle {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: white;
+}
+
+.scoreCount {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  bottom: 80%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  font-size: 150px;
+}
+
+p {
+  margin: 40px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+
+
+.center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+#enemyCircle,
+#myCircle {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 150px;
+  box-shadow: 0px 0px 30px blue;
+}
+
+button {
+  margin: 10px;
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border: solid rgb(193, 218, 69);
+  border-radius: 50%;
+  transition: 0.2s;
+  box-shadow: 0px 0px 80px rgba(41, 156, 60, 1);
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 0px 0px 50px red;
+}
+
+#spok:hover::after {
+  content: "Spok";
+  opacity: 1;
+  font-size: 30px;
+  text-shadow: 1px 1px;
+}
+
+#rock:hover::after {
+  content: "Rock";
+  opacity: 1;
+  font-size: 30px;
+  text-shadow: 1px 1px;
+}
+
+#scissors:hover::after {
+  content: "Scissors";
+  opacity: 1;
+  font-size: 30px;
+  text-shadow: 1px 1px;
+}
+
+#paper:hover::after {
+  content: "Paper";
+  opacity: 1;
+  font-size: 30px;
+  text-shadow: 1px 1px;
+}
+
+#lizard:hover::after {
+  content: "Lizard";
+  opacity: 1;
+  font-size: 30px;
+  text-shadow: 1px 1px;
+}
+
+#spok {
+  background-image: url('images/spok.png');
+}
+
+#scissors {
+  background-image: url('images/scissors.png');
+}
+
+#rock {
+  background-image: url('images/rock.png');
+}
+
+#paper {
+  background-image: url('images/paper.png');
+}
+
+#lizard {
+  background-image: url('images/lizard.png');
+}
+
+.question {
+  background-image: url('images/question.png');
+}
