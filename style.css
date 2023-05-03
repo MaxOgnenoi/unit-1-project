@@ -8,24 +8,28 @@ body {
 }
 
 #scoreTitle {
+  font-family: 'Comfortaa', cursive;
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 36px;
   color: white;
+
 }
 
 .scoreCount {
+  font-family: 'Comfortaa', cursive;
   display: flex;
   flex-direction: row;
   justify-content: center;
   color: white;
   position: absolute;
-  bottom: 80%;
+  bottom: 75%;
   left: 50%;
   transform: translate(-50%, 50%);
   font-size: 150px;
+
 }
 
 p {
@@ -35,11 +39,9 @@ p {
 .left {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  align-self: center;
   justify-content: center;
 }
-
-
 
 .center {
   display: flex;
@@ -49,10 +51,20 @@ p {
 
 }
 
+#winOrLose {
+  font-family: 'Comfortaa', cursive;
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  color: white;
+  transform: translate(-50%, 50%);
+  font-size: 50px;
+}
+
 .right {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 
 }
