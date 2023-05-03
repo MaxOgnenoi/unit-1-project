@@ -1,18 +1,45 @@
 body {
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
   }
   
-  .question {
+  .left {
     display: flex;
     flex-direction: column;
+    align-self: flex-end;
+    justify-content: center;
+    
+  }
+  
+
+  .center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
   }
   
   .right {
     display: flex;
     flex-direction: column;
-    float: right;
+    align-items: flex-start;
+    justify-content: center;
+  
   }
   
+  #enemyCircle, #myCircle {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+   border: 2px solid white;
+    border-radius: 50%;
+    margin: 150px;
+  }
   button {
     margin: 10px;
     background-size: cover;
@@ -88,13 +115,4 @@ body {
   }
   
   
-  .centerButton {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 200px;
-    height: 200px;
-    background-color: grey;
-    border: 2px solid white;
-    border-radius: 50%
-  }
+  
