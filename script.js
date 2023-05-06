@@ -2,8 +2,13 @@ let enemyScore = 0
 let myScore = 0
 
 
+
+
 const myCircleBtn = document.getElementById('myCircle')
 const enemyCircleBtn = document.getElementById('enemyCircle')
+let myScoreCount = document.getElementById('myScore')
+let enemyScoreCount = document.getElementById('enemyScore')
+let winOrLoseTag = document.getElementById('winOrLose')
 let allPictures = [
     "url('images/spok.png')",
     "url('images/paper.png')",
@@ -25,6 +30,30 @@ spokBtn.addEventListener('click', () => {
     let randomPicture = allPictures[randomNumber]
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
+    if (randomPicture === "url('images/spok.png')") {
+        winOrLoseTag.innerHTML = 'It\'s draw!'
+    }
+    else if (randomPicture === "url('images/rock.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/scissors.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/paper.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
+
+    else if (randomPicture === "url('images/lizard.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
 });
 
 paperBtn.addEventListener('click', () => {
@@ -34,6 +63,30 @@ paperBtn.addEventListener('click', () => {
     let randomPicture = allPictures[randomNumber]
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
+    if (randomPicture === "url('images/paper.png')") {
+        winOrLoseTag.innerHTML = 'It\'s draw!'
+    }
+    else if (randomPicture === "url('images/spok.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/rock.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/scissors.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
+
+    else if (randomPicture === "url('images/lizard.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
 });
 
 scissorsBtn.addEventListener('click', () => {
@@ -43,6 +96,30 @@ scissorsBtn.addEventListener('click', () => {
     let randomPicture = allPictures[randomNumber]
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
+    if (randomPicture === "url('images/scissors.png')") {
+        winOrLoseTag.innerHTML = 'It\'s draw!'
+    }
+    else if (randomPicture === "url('images/paper.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/lizard.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/spok.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
+
+    else if (randomPicture === "url('images/rock.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
 });
 
 rockBtn.addEventListener('click', () => {
@@ -52,6 +129,30 @@ rockBtn.addEventListener('click', () => {
     let randomPicture = allPictures[randomNumber]
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
+    if (randomPicture === "url('images/rock.png')") {
+        winOrLoseTag.innerHTML = 'It\'s draw!'
+    }
+    else if (randomPicture === "url('images/scissors.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/lizard.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/rock.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
+
+    else if (randomPicture === "url('images/spok.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
 });
 
 lizardBtn.addEventListener('click', () => {
@@ -61,4 +162,28 @@ lizardBtn.addEventListener('click', () => {
     let randomPicture = allPictures[randomNumber]
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
+    if (randomPicture === "url('images/lizard.png')") {
+        winOrLoseTag.innerHTML = 'It\'s draw!'
+    }
+    else if (randomPicture === "url('images/paper.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/spok.png')") {
+        winOrLoseTag.innerHTML = 'You Win!'
+        myScore++
+        myScoreCount.innerHTML = myScore
+    }
+    else if (randomPicture === "url('images/scissors.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
+
+    else if (randomPicture === "url('images/rock.png')") {
+        winOrLoseTag.innerHTML = 'You Lose!'
+        enemyScore++
+        enemyScoreCount.innerHTML = enemyScore
+    }
 });
