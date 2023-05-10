@@ -1,10 +1,10 @@
 body {
-  background-color: black;
+  background-image: url("images/back.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
 
 #scoreTitle {
@@ -88,10 +88,10 @@ button {
   border: solid rgb(193, 218, 69);
   border-radius: 50%;
   transition: 0.2s;
-  box-shadow: 0px 0px 80px rgba(41, 156, 60, 1);
+  box-shadow: 0px 0px 80px rgb(1, 2, 1);
 }
 
-button:hover {
+button:hover + #hover-sound {
   cursor: pointer;
   transform: scale(1.1);
   box-shadow: 0px 0px 50px red;
@@ -154,4 +154,43 @@ button:hover {
 
 .question {
   background-image: url('images/question.png');
+}
+
+#leo img {
+  width: 200px;
+  position: absolute;
+  left: 86%;
+  top: 75%;
+  transform: rotate(340deg);
+}
+
+#penny img {
+  width: 200px;
+  position: absolute;
+  left: 3%;
+  top: 75%;
+  transform: scaleX(-1) rotate(345deg);
+}
+
+#radzhesh img {
+  width: 240px;
+  position: absolute;
+  left: 60%;
+  top: 70%;
+  transform: rotate(20deg);
+}
+
+#sheldon img {
+  width: 240px;
+  position: absolute;
+  left: 25%;
+  top: 0%;
+  transform: rotate(180deg);
+}
+
+#sheldonSecond img {
+  width: 240px;
+  position: absolute;
+  left: 30%;
+  top: 85%;
 }

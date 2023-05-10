@@ -3,7 +3,6 @@ let myScore = 0
 
 
 
-
 const myCircleBtn = document.getElementById('myCircle')
 const enemyCircleBtn = document.getElementById('enemyCircle')
 let myScoreCount = document.getElementById('myScore')
@@ -22,6 +21,13 @@ const scissorsBtn = document.getElementById('scissors')
 const rockBtn = document.getElementById('rock')
 const lizardBtn = document.getElementById('lizard')
 
+const leoTag = document.getElementById("leo");
+const pennyTag = document.getElementById("penny");
+const radzheshTag = document.getElementById("radzhesh");
+const sheldonTag = document.getElementById("sheldon");
+const sheldonSecondTag = document.getElementById("sheldonSecond");
+
+
 
 spokBtn.addEventListener('click', () => {
     myCircleBtn.style.backgroundImage = "url('images/spok.png')"
@@ -37,11 +43,16 @@ spokBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Win!'
         myScore++
         myScoreCount.innerHTML = myScore
+        leoTag.removeAttribute('hidden');
+        setTimeout(() => {
+            leoTag.setAttribute('hidden', true);
+        }, 400);
     }
     else if (randomPicture === "url('images/scissors.png')") {
         winOrLoseTag.innerHTML = 'You Win!'
         myScore++
         myScoreCount.innerHTML = myScore
+
     }
     else if (randomPicture === "url('images/paper.png')") {
         winOrLoseTag.innerHTML = 'You Lose!'
@@ -75,6 +86,10 @@ paperBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Win!'
         myScore++
         myScoreCount.innerHTML = myScore
+        pennyTag.removeAttribute('hidden');
+        setTimeout(() => {
+            pennyTag.setAttribute('hidden', true);
+        }, 400);
     }
     else if (randomPicture === "url('images/scissors.png')") {
         winOrLoseTag.innerHTML = 'You Lose!'
@@ -113,6 +128,10 @@ scissorsBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
+        sheldonTag.removeAttribute('hidden');
+        setTimeout(() => {
+            sheldonTag.setAttribute('hidden', true);
+        }, 400);
     }
 
     else if (randomPicture === "url('images/rock.png')") {
@@ -142,10 +161,14 @@ rockBtn.addEventListener('click', () => {
         myScore++
         myScoreCount.innerHTML = myScore
     }
-    else if (randomPicture === "url('images/rock.png')") {
+    else if (randomPicture === "url('images/paper.png')") {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
+        radzheshTag.removeAttribute('hidden');
+        setTimeout(() => {
+            radzheshTag.setAttribute('hidden', true);
+        }, 400);
     }
 
     else if (randomPicture === "url('images/spok.png')") {
@@ -179,6 +202,10 @@ lizardBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
+        sheldonSecondTag.removeAttribute('hidden');
+        setTimeout(() => {
+            sheldonSecondTag.setAttribute('hidden', true);
+        }, 400);
     }
 
     else if (randomPicture === "url('images/rock.png')") {
