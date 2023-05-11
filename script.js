@@ -27,6 +27,28 @@ const radzheshTag = document.getElementById("radzhesh");
 const sheldonTag = document.getElementById("sheldon");
 const sheldonSecondTag = document.getElementById("sheldonSecond");
 
+const hover = document.getElementById('hover')
+const beep = document.getElementById('beep')
+
+spokBtn.addEventListener('mouseover', playHover)
+paperBtn.addEventListener('mouseover', playHover)
+scissorsBtn.addEventListener('mouseover', playHover)
+rockBtn.addEventListener('mouseover', playHover)
+lizardBtn.addEventListener('mouseover', playHover)
+
+spokBtn.addEventListener('click', playBeep)
+paperBtn.addEventListener('click', playBeep)
+scissorsBtn.addEventListener('click', playBeep)
+rockBtn.addEventListener('click', playBeep)
+lizardBtn.addEventListener('click', playBeep)
+
+function playHover() {
+    hover.play()
+}
+function playBeep() {
+    beep.play()
+}
+
 
 
 spokBtn.addEventListener('click', () => {
@@ -37,7 +59,7 @@ spokBtn.addEventListener('click', () => {
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
     if (randomPicture === "url('images/spok.png')") {
-        winOrLoseTag.innerHTML = 'It\'s draw!'
+        winOrLoseTag.innerHTML = 'It\'s A Draw!'
     }
     else if (randomPicture === "url('images/rock.png')") {
         winOrLoseTag.innerHTML = 'You Win!'
@@ -75,7 +97,7 @@ paperBtn.addEventListener('click', () => {
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
     if (randomPicture === "url('images/paper.png')") {
-        winOrLoseTag.innerHTML = 'It\'s draw!'
+        winOrLoseTag.innerHTML = 'It\'s A Draw!'
     }
     else if (randomPicture === "url('images/spok.png')") {
         winOrLoseTag.innerHTML = 'You Win!'
@@ -112,7 +134,7 @@ scissorsBtn.addEventListener('click', () => {
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
     if (randomPicture === "url('images/scissors.png')") {
-        winOrLoseTag.innerHTML = 'It\'s draw!'
+        winOrLoseTag.innerHTML = 'It\'s A Draw!'
     }
     else if (randomPicture === "url('images/paper.png')") {
         winOrLoseTag.innerHTML = 'You Win!'
@@ -149,7 +171,7 @@ rockBtn.addEventListener('click', () => {
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
     if (randomPicture === "url('images/rock.png')") {
-        winOrLoseTag.innerHTML = 'It\'s draw!'
+        winOrLoseTag.innerHTML = 'It\'s A Draw!'
     }
     else if (randomPicture === "url('images/scissors.png')") {
         winOrLoseTag.innerHTML = 'You Win!'
@@ -186,7 +208,7 @@ lizardBtn.addEventListener('click', () => {
     enemyCircleBtn.style.backgroundImage = randomPicture
     enemyCircleBtn.style.backgroundSize = "contain";
     if (randomPicture === "url('images/lizard.png')") {
-        winOrLoseTag.innerHTML = 'It\'s draw!'
+        winOrLoseTag.innerHTML = 'It\'s A Draw!'
     }
     else if (randomPicture === "url('images/paper.png')") {
         winOrLoseTag.innerHTML = 'You Win!'

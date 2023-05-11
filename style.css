@@ -80,6 +80,17 @@ p {
   box-shadow: 0px 0px 30px blue;
 }
 
+#vs img {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 button {
   margin: 10px;
   background-size: cover;
