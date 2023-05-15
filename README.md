@@ -20,7 +20,7 @@ This game offers an engaging and entertaining way to test your skills against th
 
 
 <h2>Game screenshot</h2>
-![screen](readmefiles/Screenshot%202023-05-14%20at%2010.46.01%20PM.png)
+<img src="readmefiles/Screenshot%202023-05-14%20at%2010.46.01%20PM.png">
 
 <h3><a href="https://maksymohnenyi.github.io/unit-1-project/">Link</a></h3>
 
