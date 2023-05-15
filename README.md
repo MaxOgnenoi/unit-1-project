@@ -1,4 +1,4 @@
-Rock, Scissors, Paper, Spock, Lizard
+<h1>Rock, Scissors, Paper, Spock, Lizard</h1>
 
 Welcome to the world of Rock, Scissors, Paper, Spock, Lizard! This classic game has been given an exciting twist with the addition of two new options: Spock and Lizard. Inspired by the popular television show "The Big Bang Theory," this game challenges your strategic thinking and decision-making skills.
 
@@ -18,6 +18,10 @@ With these expanded rules, you'll have to think strategically and anticipate you
 
 This game offers an engaging and entertaining way to test your skills against the computer. So, sharpen your strategic thinking, embrace the unpredictability, and enjoy the thrill of Rock, Scissors, Paper, Spock, Lizard!
 
+
+<h2>Game screenshot</h2>
 ![screen](readmefiles/Screenshot%202023-05-14%20at%2010.46.01%20PM.png)
+
+<h3><a href="https://maksymohnenyi.github.io/unit-1-project/">Link</a></h3>
 
 Technologies Used: JavaScript, HTML, CSS
