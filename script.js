@@ -22,10 +22,15 @@ const rockBtn = document.getElementById('rock')
 const lizardBtn = document.getElementById('lizard')
 
 const leoTag = document.getElementById("leo");
+leoTag.style.display = 'none';
 const pennyTag = document.getElementById("penny");
+pennyTag.style.display = 'none';
 const radzheshTag = document.getElementById("radzhesh");
+radzheshTag.style.display = 'none';
 const sheldonTag = document.getElementById("sheldon");
+sheldonTag.style.display = 'none';
 const sheldonSecondTag = document.getElementById("sheldonSecond");
+sheldonSecondTag.style.display = 'none';
 
 const hover = document.getElementById('hover')
 const beep = document.getElementById('beep')
@@ -65,15 +70,19 @@ spokBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Win!'
         myScore++
         myScoreCount.innerHTML = myScore
-        leoTag.removeAttribute('hidden');
+        leoTag.style.display = 'block';
         setTimeout(() => {
-            leoTag.setAttribute('hidden', true);
+            leoTag.style.display = 'none';
         }, 400);
     }
     else if (randomPicture === "url('images/scissors.png')") {
         winOrLoseTag.innerHTML = 'You Win!'
         myScore++
         myScoreCount.innerHTML = myScore
+        leoTag.style.display = 'block';
+        setTimeout(() => {
+            leoTag.style.display = 'none';
+        }, 400);
 
     }
     else if (randomPicture === "url('images/paper.png')") {
@@ -103,14 +112,18 @@ paperBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Win!'
         myScore++
         myScoreCount.innerHTML = myScore
+        pennyTag.style.display = 'block';
+        setTimeout(() => {
+            pennyTag.style.display = 'none';
+        }, 400);
     }
     else if (randomPicture === "url('images/rock.png')") {
         winOrLoseTag.innerHTML = 'You Win!'
         myScore++
         myScoreCount.innerHTML = myScore
-        pennyTag.removeAttribute('hidden');
+        pennyTag.style.display = 'block';
         setTimeout(() => {
-            pennyTag.setAttribute('hidden', true);
+            pennyTag.style.display = 'none';
         }, 400);
     }
     else if (randomPicture === "url('images/scissors.png')") {
@@ -150,9 +163,9 @@ scissorsBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
-        sheldonTag.removeAttribute('hidden');
+        sheldonTag.style.display = 'block';
         setTimeout(() => {
-            sheldonTag.setAttribute('hidden', true);
+            sheldonTag.style.display = 'none';
         }, 400);
     }
 
@@ -160,6 +173,10 @@ scissorsBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
+        sheldonTag.style.display = 'block';
+        setTimeout(() => {
+            sheldonTag.style.display = 'none';
+        }, 400);
     }
 });
 
@@ -187,9 +204,9 @@ rockBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
-        radzheshTag.removeAttribute('hidden');
+        radzheshTag.style.display = 'block';
         setTimeout(() => {
-            radzheshTag.setAttribute('hidden', true);
+            radzheshTag.style.display = 'none';
         }, 400);
     }
 
@@ -197,6 +214,10 @@ rockBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
+        radzheshTag.style.display = 'block';
+        setTimeout(() => {
+            radzheshTag.style.display = 'none';
+        }, 400);
     }
 });
 
@@ -224,9 +245,9 @@ lizardBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
-        sheldonSecondTag.removeAttribute('hidden');
+        sheldonSecondTag.style.display = 'block';
         setTimeout(() => {
-            sheldonSecondTag.setAttribute('hidden', true);
+            sheldonSecondTag.style.display = 'none';
         }, 400);
     }
 
@@ -234,5 +255,9 @@ lizardBtn.addEventListener('click', () => {
         winOrLoseTag.innerHTML = 'You Lose!'
         enemyScore++
         enemyScoreCount.innerHTML = enemyScore
+        sheldonSecondTag.style.display = 'block';
+        setTimeout(() => {
+            sheldonSecondTag.style.display = 'none';
+        }, 400);
     }
 });
